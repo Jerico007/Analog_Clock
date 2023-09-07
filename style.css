@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: darkblue;
+}
+.clock-container {
+  position: relative;
+  height: 40vw;
+  width: 40vw;
+  background-image: url("Assests/pngwing.com.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: drop-shadow(0px 0px 30px pink);
+}
+
+#hour-hand {
+  position: absolute;
+  top: 21%;
+  left: 48.1%;
+  height: 28%;
+  background-color: black;
+  width: 1vw;
+  border-radius: 12px;
+  transition: all 0.3s ease-in;
+  transform-origin: bottom;
+}
+
+#min-hand {
+  position: absolute;
+  top: 11%;
+  left: 48.1%;
+  height: 40%;
+  background-color: black;
+  width: 1vw;
+  border-radius: 12px;
+  transition: all 0.3s ease-in;
+  transform-origin: bottom;
+}
+
+#second-hand {
+  position: absolute;
+  top: 12%;
+  left: 48.1%;
+  height: 37%;
+  background: rgb(244, 0, 222);
+  background: linear-gradient(
+    180deg,
+    rgba(244, 0, 222, 1) 0%,
+    rgba(157, 27, 156, 1) 35%,
+    rgba(4, 6, 6, 1) 100%
+  );
+  width: 1vw;
+  border-radius: 12px;
+  transition: all 0.3s ease-in;
+  transform-origin: bottom;
+}
